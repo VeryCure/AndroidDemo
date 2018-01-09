@@ -31,3 +31,4 @@ proguard/
 #other
 *.iml
 gradle.properties
+app/libs/
