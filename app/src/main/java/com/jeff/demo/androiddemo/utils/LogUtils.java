@@ -3,7 +3,7 @@ package com.jeff.demo.androiddemo.utils;
 import android.util.Log;
 
 /**
- * Created by ttxs on 2017/1/23.
+ * Created by jeff on 2017/1/23.
  */
 
 public class LogUtils
