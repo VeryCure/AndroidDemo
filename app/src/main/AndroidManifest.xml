@@ -16,8 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".material.AppBarLayoutActivity"
+        <activity
+            android:name=".material.AppBarLayoutActivity"
+            android:label="AppBarLayout"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".material.CollapsingToolBarActivity"
+                  android:label="CollapsingToolBar"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".material.BehaviorActivity"
+                  android:label="Behavior"
+                  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
