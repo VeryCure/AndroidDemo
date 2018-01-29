@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.jeff.demo.androiddemo.material.AppBarLayoutActivity;
 import com.jeff.demo.androiddemo.material.BehaviorActivity;
 import com.jeff.demo.androiddemo.material.CollapsingToolBarActivity;
+import com.jeff.demo.androiddemo.shadow.ViewShadowActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
     RecyclerView mMainRecycler;
 
     private String[] names = new String[]{"AppBarLayout","CollapsingToolBar",
-            "Behavior"};
+            "Behavior","ViewShadow"};
     private MainAdapter mMainAdapter;
 
     @Override
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
             case 2:
                 startActivity(new Intent(this, BehaviorActivity.class));
                 break;
+            case 3:
+                startActivity(new Intent(this, ViewShadowActivity.class));
         }
     }
 }

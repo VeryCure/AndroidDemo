@@ -26,6 +26,9 @@
         <activity android:name=".material.BehaviorActivity"
                   android:label="Behavior"
                   android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".shadow.ViewShadowActivity"
+                  android:label="Shadow"
+                  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
