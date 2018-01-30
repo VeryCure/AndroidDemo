@@ -29,6 +29,9 @@
         <activity android:name=".shadow.ViewShadowActivity"
                   android:label="Shadow"
                   android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".chart.DataChartActivity"
+                  android:label="Chart"
+                  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

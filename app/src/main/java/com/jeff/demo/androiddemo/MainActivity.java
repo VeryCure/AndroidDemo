@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.jeff.demo.androiddemo.chart.DataChartActivity;
 import com.jeff.demo.androiddemo.material.AppBarLayoutActivity;
 import com.jeff.demo.androiddemo.material.BehaviorActivity;
 import com.jeff.demo.androiddemo.material.CollapsingToolBarActivity;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
     RecyclerView mMainRecycler;
 
     private String[] names = new String[]{"AppBarLayout","CollapsingToolBar",
-            "Behavior","ViewShadow"};
+            "Behavior","ViewShadow","DataChart"};
     private MainAdapter mMainAdapter;
 
     @Override
@@ -56,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
                 break;
             case 3:
                 startActivity(new Intent(this, ViewShadowActivity.class));
+            case 4:
+                startActivity(new Intent(this, DataChartActivity.class));
+                break;
         }
     }
 }
