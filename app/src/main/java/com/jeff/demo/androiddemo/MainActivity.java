@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
     RecyclerView mMainRecycler;
 
     private String[] names = new String[]{"AppBarLayout","CollapsingToolBar",
-            "Behavior","ViewShadow","DataChart"};
+            "Behavior","ViewShadow","DataChart","RxAndroid"};
     private MainAdapter mMainAdapter;
 
     @Override
@@ -57,8 +57,11 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnIte
                 break;
             case 3:
                 startActivity(new Intent(this, ViewShadowActivity.class));
+                break;
             case 4:
                 startActivity(new Intent(this, DataChartActivity.class));
+                break;
+            case 5:
                 break;
         }
     }

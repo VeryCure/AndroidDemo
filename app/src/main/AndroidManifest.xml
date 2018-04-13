@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.jeff.demo.androiddemo">
+    package="com.jeff.demo.androiddemo">
 
     <application
         android:allowBackup="true"
@@ -11,27 +11,35 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".material.AppBarLayoutActivity"
             android:label="AppBarLayout"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".material.CollapsingToolBarActivity"
-                  android:label="CollapsingToolBar"
-                  android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".material.BehaviorActivity"
-                  android:label="Behavior"
-                  android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".shadow.ViewShadowActivity"
-                  android:label="Shadow"
-                  android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".chart.DataChartActivity"
-                  android:label="Chart"
-                  android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material.CollapsingToolBarActivity"
+            android:label="CollapsingToolBar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material.BehaviorActivity"
+            android:label="Behavior"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".shadow.ViewShadowActivity"
+            android:label="Shadow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chart.DataChartActivity"
+            android:label="Chart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rxjava.RxAndroidActivity"
+            android:label="rxandroid"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
