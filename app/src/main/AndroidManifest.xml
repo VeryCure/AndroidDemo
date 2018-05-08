@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jeff.demo.androiddemo">
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
 
     <application
         android:allowBackup="true"
@@ -8,8 +9,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,6 +42,9 @@
             android:name=".rxjava.RxAndroidActivity"
             android:label="rxandroid"
             android:theme="@style/AppTheme.NoActionBar" />
+        <receiver android:name=".shield.HomeReceiver"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>
