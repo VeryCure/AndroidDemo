@@ -20,6 +20,7 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.github.mikephil.charting.utils.Utils;
 import com.jeff.demo.androiddemo.R;
 
+import com.jeff.demo.androiddemo.statusbar.StatusBarUtils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +43,7 @@ public class DataChartActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chart_layout);
+        StatusBarUtils.setStatusTextColor(true,this);
         ButterKnife.bind(this);
         initView();
         setLineChart2Data();

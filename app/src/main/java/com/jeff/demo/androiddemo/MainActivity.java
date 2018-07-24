@@ -21,6 +21,7 @@ import com.jeff.demo.androiddemo.material.BehaviorActivity;
 import com.jeff.demo.androiddemo.material.CollapsingToolBarActivity;
 import com.jeff.demo.androiddemo.shadow.ViewShadowActivity;
 import com.jeff.demo.androiddemo.shield.HomeReceiver;
+import com.jeff.demo.androiddemo.statusbar.StatusBarUtils;
 import com.jeff.demo.androiddemo.utils.BaseUtils;
 import com.jeff.demo.androiddemo.utils.LogUtils;
 
@@ -36,7 +37,7 @@ public class MainActivity extends Activity implements MainAdapter
     RecyclerView mMainRecycler;
 
     private String[] names = new String[]{"AppBarLayout", "CollapsingToolBar",
-            "Behavior", "ViewShadow", "DataChart", "RxAndroid","tansform"};
+            "Behavior", "ViewShadow", "DataChart", "RxAndroid","tansform","StatusBar"};
     private MainAdapter mMainAdapter;
 
     @Override
@@ -44,7 +45,9 @@ public class MainActivity extends Activity implements MainAdapter
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fullScreen();
+        StatusBarUtils.setStatusBar(this,false,false);
+        StatusBarUtils.setStatusTextColor(true,this);
+        //fullScreen();
         ButterKnife.bind(this);
 //        HomeReceiver homeReceiver = new HomeReceiver();
 //        IntentFilter intentFilter = new IntentFilter(Intent
@@ -124,7 +127,7 @@ public class MainActivity extends Activity implements MainAdapter
     public void onWindowFocusChanged(boolean hasFocus)
     {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus && Build.VERSION.SDK_INT >= 19)
+       /* if (hasFocus && Build.VERSION.SDK_INT >= 19)
         {
             View decorView = getWindow().getDecorView();
             decorView.setSystemUiVisibility(
@@ -134,7 +137,7 @@ public class MainActivity extends Activity implements MainAdapter
                             | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                             | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        }
+        }*/
     }
 
     @Override
