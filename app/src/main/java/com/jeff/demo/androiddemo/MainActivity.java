@@ -15,6 +15,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
 import android.view.View;
 
+import com.jeff.demo.androiddemo.annotation.AnnotationActivity;
 import com.jeff.demo.androiddemo.chart.DataChartActivity;
 import com.jeff.demo.androiddemo.material.AppBarLayoutActivity;
 import com.jeff.demo.androiddemo.material.BehaviorActivity;
@@ -22,6 +23,7 @@ import com.jeff.demo.androiddemo.material.CollapsingToolBarActivity;
 import com.jeff.demo.androiddemo.shadow.ViewShadowActivity;
 import com.jeff.demo.androiddemo.shield.HomeReceiver;
 import com.jeff.demo.androiddemo.statusbar.StatusBarUtils;
+import com.jeff.demo.androiddemo.tablayout.CustomTabLayoutActivity;
 import com.jeff.demo.androiddemo.utils.BaseUtils;
 import com.jeff.demo.androiddemo.utils.LogUtils;
 
@@ -37,7 +39,7 @@ public class MainActivity extends Activity implements MainAdapter
     RecyclerView mMainRecycler;
 
     private String[] names = new String[]{"AppBarLayout", "CollapsingToolBar",
-            "Behavior", "ViewShadow", "DataChart", "RxAndroid","tansform","StatusBar"};
+            "Behavior", "ViewShadow", "DataChart","Annotation","CustomTabLayoutActivity"};
     private MainAdapter mMainAdapter;
 
     @Override
@@ -101,12 +103,10 @@ public class MainActivity extends Activity implements MainAdapter
                 startActivity(new Intent(this, DataChartActivity.class));
                 break;
             case 5:
+                startActivity(new Intent(this, AnnotationActivity.class));
                 break;
             case 6:
-                String s = "7D6B9C6D";
-                String code = transformCode(s);
-                String number = BaseUtils.toD(code,16);
-                LogUtils.e(code+"  :  "+number);
+                startActivity(new Intent(this, CustomTabLayoutActivity.class));
                 break;
         }
     }

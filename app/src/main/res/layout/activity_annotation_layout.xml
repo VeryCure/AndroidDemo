@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical">
+  <TextView
+    android:id="@+id/annotation_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:text="我是TextView"
+    android:textColor="@color/color_40_00b98c"/>
+
+  <Button
+    android:id="@+id/annotation_btn"
+    android:text="我是button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

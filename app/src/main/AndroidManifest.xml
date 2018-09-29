@@ -43,9 +43,19 @@
             android:name=".rxjava.RxAndroidActivity"
             android:label="rxandroid"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".annotation.AnnotationActivity"
+            android:label="annotation"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".tablayout.CustomTabLayoutActivity"
+          android:label="customtablayout"
+          android:theme="@style/AppTheme.NoActionBar"/>
         <receiver android:name=".shield.HomeReceiver"
             android:enabled="true"
             android:exported="true"/>
+        <service android:name="com.fatangare.logcatviewer.service.LogcatViewerService"
+          android:label="LogcatLoggerService"></service>
+        <service android:name="com.fatangare.logcatviewer.service.LogcatViewerFloatingView"
+          android:label="LogcatLoggerFloatingView" > </service>
     </application>
 
 </manifest>
