@@ -3,12 +3,9 @@ package com.jeff.demo.androiddemo;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,13 +18,9 @@ import com.jeff.demo.androiddemo.material.AppBarLayoutActivity;
 import com.jeff.demo.androiddemo.material.BehaviorActivity;
 import com.jeff.demo.androiddemo.material.CollapsingToolBarActivity;
 import com.jeff.demo.androiddemo.shadow.ViewShadowActivity;
-import com.jeff.demo.androiddemo.shield.HomeReceiver;
 import com.jeff.demo.androiddemo.statusbar.StatusBarUtils;
 import com.jeff.demo.androiddemo.tablayout.CustomTabLayoutActivity;
-import com.jeff.demo.androiddemo.utils.BaseUtils;
-import com.jeff.demo.androiddemo.utils.LogUtils;
-
-import java.lang.reflect.Method;
+import com.jeff.demo.androiddemo.utils.DataUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -119,7 +112,7 @@ public class MainActivity extends Activity implements MainAdapter
             code = code + pSnrM1.substring(pSnrM1.length()-2*(i+1),pSnrM1.length
                     ()-2*i);
         }
-        code = BaseUtils.toD(code, 16);
+        code = DataUtil.toD(code, 16);
         return code;
     }
     @SuppressLint("WrongConstant")

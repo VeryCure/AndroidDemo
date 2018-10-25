@@ -17,7 +17,7 @@ gen/
 build/
 
 # idea files
-.idea/
+.idea
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -32,3 +32,4 @@ proguard/
 *.iml
 gradle.properties
 app/libs/
+mixc.xml

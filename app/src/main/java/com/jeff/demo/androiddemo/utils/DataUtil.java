@@ -6,7 +6,7 @@ import java.math.BigInteger;
  * Created by ttxs on 2018/4/18.
  */
 
-public class BaseUtils
+public class DataUtil
 {
     // 任意进制数转为十进制数
     public static String toD(String a, int b) {

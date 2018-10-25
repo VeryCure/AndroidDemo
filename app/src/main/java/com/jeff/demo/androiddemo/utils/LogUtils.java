@@ -1,6 +1,7 @@
 package com.jeff.demo.androiddemo.utils;
 
 import android.util.Log;
+import com.jeff.demo.androiddemo.Config;
 
 /**
  * Created by jeff on 2017/1/23.
@@ -8,7 +9,7 @@ import android.util.Log;
 
 public class LogUtils
 {
-    private static boolean isDebug = true;
+    private static boolean isDebug = Config.mIsDebug;
     private static char logFilter = 'v';
     private static final String TAG = "jeff";
 
